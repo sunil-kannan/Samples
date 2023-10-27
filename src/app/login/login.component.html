@@ -1,0 +1,39 @@
+ <div class=" container-fluid login_box">
+    <div style="position: absolute;">
+        <div class="row align-items-center login border">
+            <div class="col">
+                <form   class="form-horizontal">
+                    <div class="mb-5 mt-3 sign-in text-center">
+                        <h3>LOGIN</h3>
+                    </div>
+
+                    <div class="input-group flex-nowrap mb-4 ">
+                        <span class="input-group-text" id="addon-wrapping"><i
+                                class="fa-solid fa-envelope"></i></span>
+                        <input type="text" [(ngModel)]="userLogin.email"   name="email" class="form-control" placeholder="Email"
+                            aria-label="Email">
+                    </div>
+
+                    <div class="input-group flex-nowrap ">
+                        <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-unlock"></i></span>
+                        <input [(ngModel)]="userLogin.password"   id="password" name="password" class="form-control password-eye"
+                            placeholder="Password" aria-label="password">
+                        <span class="input-group-text out-none fas fa-eye-slash" id="eye"></span>
+                    </div><br>
+
+                    <div class="mt-2">
+                        <div class="d-grid gap-2">
+                            <button type="submit"   class="btn btn-primary">Login</button>
+                        </div>
+                    </div>
+
+                    <div class="form-text mb-3 text-center">
+                        Don't have an account? <span class="signup-btn" (click)="signup()">Signup here</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> 
+
+

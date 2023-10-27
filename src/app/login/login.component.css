@@ -1,0 +1,62 @@
+.login_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(206, 228, 222);
+}
+
+.login {
+    background-color: aliceblue;
+    padding: 5px 10px;
+    width: 300px;
+    height: 330px;
+    border-radius: 10px;
+    background-image: radial-gradient(circle 369px at -2.9% 12.9%, rgb(212, 205, 161) 0%, rgba(236, 180, 238, 0.56) 46.4%, rgba(163, 203, 247, 1) 100.7%);
+}
+
+.form-control:focus {
+    border: 2px solid rgba(14, 80, 167, 0.692);
+    box-shadow: none;
+}
+
+.out-none,
+.out-none:focus {
+    border-width: 0px;
+    outline: 0;
+    box-shadow: none;
+}
+
+.link-sign {
+    color: blue;
+}
+
+.link-sign:hover {
+    color: rgb(18, 109, 228);
+}
+
+.sign-in::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    display: block;
+    margin: auto;
+    background-color: blue;
+}
+
+#eye {
+    padding-top: 10px;
+}
+
+.alert {
+    padding: 7px 0;
+    margin: 0 0;
+}
+.signup-btn{
+    color: rgba(48, 18, 218, 0.973);
+    cursor: pointer;
+
+}
+.signup-btn:hover{
+    color: rgba(48, 18, 218, 0.836);
+}

@@ -1,0 +1,38 @@
+
+.signup{
+    background-color: rgb(206, 228, 222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.signup-box {
+    background-color: aliceblue;
+    padding: 10px 10px;
+    width: 380px;
+    height: 65%;
+    background-image: radial-gradient(circle 369px at -2.9% 12.9%, rgb(199, 196, 178) 0%, rgba(208, 187, 209, 0.56) 46.4%, rgba(163, 204, 247, 0.678) 100.7%);
+
+}
+.signup-head::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    display: block;
+    margin: auto;
+    background-color: blue;
+}
+
+.form-control:focus {
+    border: 2px solid rgba(0, 0, 255, 0.692);
+    box-shadow: none;
+}
+
+.link-sign {
+    color: blue;
+}
+
+.link-sign:hover {
+    color: rgba(0, 0, 255, 0.685);
+}

@@ -1,0 +1,60 @@
+<div class="container-fluid signup">
+    <div class="row signup-box border">
+        <div >
+            <form (ngSubmit)="sign_up" method="post" >
+                <div class="mb-4 signup-head text-center">
+                    <h3>SIGN UP</h3>
+                </div>
+
+                <div class="input-group flex-nowrap mb-4">
+                    <span class="input-group-text " id="addon-wrapping"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" [(ngModel)]="user.name" class="form-control" id="name" name="name" placeholder="Enter your name"
+                        aria-label="Name" required>
+                </div>
+
+                <div class="input-group flex-nowrap mb-4">
+                    <span class="input-group-text " id="addon-wrapping"><i class="fa-solid fa-phone"></i></span>
+                    <input type="number" [(ngModel)]="user.mobile" id="phoneNo" name="mobile" class="form-control"
+                        placeholder="Enter your phone number" aria-label="phonenumber" 
+                        required>
+                </div>
+
+                <div class="input-group flex-nowrap ">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" [(ngModel)]="user.email" class="form-control" id="email" name="email"
+                        placeholder="Enter email address"  aria-label="Email" required>
+                </div>
+                <div  class="form-text mb-3">We'll never share your email with anyone else.</div>
+
+                <div class="input-group flex-nowrap mb-4 ">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" [(ngModel)]="user.password" class="form-control password-check" id="password" name="password"
+                        placeholder="Enter password" aria-label="password" required>
+                </div>
+                <!-- <div class="form-text mb-3 ">
+                    Your password must be 8-15 characters long, contain letters, numbers and special characters, and
+                    must not contain
+                    spaces, or emoji.
+                </div> -->
+
+                <div class="input-group flex-nowrap mb-4">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" [(ngModel)]="user.confirmPassword" class="form-control password-confirm-check" id="confirmPassword"
+                        name="confirmPassword" placeholder="Enter confirm Password" aria-label="Confirm Password" required>
+                </div>
+
+                <div class="mb-1">
+                    <div class="d-grid gap-2">
+                        <button type="submit"  (click)="sign_up()" class="btn btn-primary checker">Sign up</button>
+                    </div>
+                </div>  
+
+                <div class="form-text text-center">
+                    Already have an account? <span style="color: rgb(38, 65, 221); cursor: pointer;" (click)="login()" class="link-sign">Sign in</span>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
